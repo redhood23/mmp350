@@ -1,0 +1,46 @@
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    grid-template-rows: 100px max-content max-content;
+
+    column-gap: 2em;
+    row-gap: 0.8em;
+}
+
+#title {
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#menu {
+    background-color: yellow;
+    grid-column: 1 / 2;
+}
+
+#login {
+    background-color: crimson;
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
+
+#main {
+    background-color: crimson;
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+#profile {
+    background-color: yellow;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+#social {
+    background-color: aqua;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}

@@ -1,0 +1,42 @@
+#container {
+	width: 500%;
+	max-width: 1400px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	
+	grid-template-areas: 
+		"header menu"
+		"main login"
+		"main profile"
+		"main social";	
+    
+}
+
+#title {
+	grid-area: header;
+    background-color: firebrick
+}
+
+#main { grid-area: main; 
+
+background-color: aquamarine;
+
+
+}
+#menu { grid-area: menu;
+    background-color: greenyellow;
+}
+#login { grid-area: login;
+    background-color: aquamarine;
+}
+#profile { grid-area: profile;
+    background-color: firebrick;
+    
+}
+#social { grid-area: social; 
+background-color: greenyellow;
+}
+
+

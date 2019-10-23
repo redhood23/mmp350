@@ -1,0 +1,44 @@
+#container {
+	width: 960px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 0.5em;
+}
+
+#title {
+	grid-column: 2 / span 11;	
+    background-color: mediumpurple;
+    
+}
+
+#menu {
+	grid-column: 3 / span 2;
+	grid-row: 2;
+    background-color: coral;
+}
+
+#login {
+	grid-column: 1 / span 1;
+	grid-row: 1;
+    background-color: orchid;
+}
+
+#main {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 3;
+    background-color: coral;
+}
+
+#profile {
+	grid-column: 3 / span 2;
+    background-color: mediumpurple;
+}
+
+#social {
+	grid-column: 1 / span 1;
+    background-color: orchid;
+}
+
+
